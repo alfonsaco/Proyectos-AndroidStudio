@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PRC1_AlfonsoRincon</string>
+    <!--Strings para los dialogs-->
+    <string name="dialog_title_highValues">VALORES DEMASIADO GRANDES</string>
+    <string name="dialog_text_highValues">Los valores introducidos son muy grandes. El número máximo de Sets es 100, y el máximo de Work y Rest es 1000</string>
+    <string name="dialog_title_invalidValues">NÚMEROS INVÁLIDOS</string>
+    <string name="dialog_text_invalidValues">Uno o más números introducidos no son válidos. Deben ser mayores de 0</string>
+    <string name="dialog_title_wait">ESPERE</string>
+    <string name="dialog_text_wait">ESPERE A QUE EL PROGRAMA TERMINE</string>
+    <string name="dialog_title_empty">HAY CAMPOS SIN RELLENAR</string>
+    <string name="dialog_text_empty">Debe rellenar todos los campos para comenzar el programa</string>
+</resources>

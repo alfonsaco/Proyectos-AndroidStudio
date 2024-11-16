@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:background="#FAFAFA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etxtSets"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:textColor="#737373"
+        android:gravity="center"
+        android:background="@drawable/edittext_border"
+        android:hint="Sets"
+        android:textColorHint="#B1B1B1"
+        android:inputType="number"
+        android:singleLine="false"
+        app:layout_constraintEnd_toStartOf="@+id/etxtWork"
+        app:layout_constraintTop_toTopOf="@+id/etxtWork" />
+
+    <EditText
+        android:id="@+id/etxtWork"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:background="@drawable/edittext_border"
+        android:hint="Work"
+        android:gravity="center"
+        android:textColor="#737373"
+        android:textColorHint="#B1B1B1"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etxtRest"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:background="@drawable/edittext_border"
+        android:hint="Rest"
+        android:textColor="#737373"
+        android:textColorHint="#B1B1B1"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/etxtWork"
+        app:layout_constraintTop_toTopOf="@+id/etxtWork" />
+
+    <ImageButton
+        android:id="@+id/btnPlay"
+        android:layout_width="115dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/button_border"
+        android:radius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etxtWork"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/txtSeriesLeftMessage"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="150dp"
+        android:gravity="center"
+        android:text="SERIES LEFT:"
+        android:textColor="#737373"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSeriesLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#737373"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSeriesLeftMessage"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/txtState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="WORK/REST"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#737373"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay"
+        tools:text="WORK/REST" />
+
+    <TextView
+        android:id="@+id/txtSecondsLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="#737373"
+        android:textSize="55sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtState"
+        android:text="0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
