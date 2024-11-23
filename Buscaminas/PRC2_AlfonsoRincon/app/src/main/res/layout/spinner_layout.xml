@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivCustomSpinner"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:padding="10dp"
+        android:src="@drawable/clasica" />
+    
+    <TextView
+        android:id="@+id/tvCustomSpinner"
+        android:padding="10dp"
+        android:text="Mina clásica"
+        android:gravity="center_vertical"
+        android:textColor="#090909"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
