@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ShareMyBike</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Select Date</string>
+    <string name="second_fragment_label">List of available bikes</string>
+    <string name="next">SELECT DATE</string>
+    <string name="previous">Previous</string>
+
+    <!--Strings de la MainActivity-->
+    <string name="ubi_denegada">Location permission denied</string>
+    <string name="obtener_ubicacion">You must obtain the location first</string>
+    <string name="ubi_error">Unable to get the location</string>
+
+    <string name="direccion_postal_error">Error retrieving the address</string>
+    <string name="direccion_postal_noDisp">Postal address not available</string>
+
+    <string name="agregar_email">You must add an email</string>
+    <string name="email_no_valido">Invalid email</string>
+</resources>
